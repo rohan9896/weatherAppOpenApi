@@ -21,11 +21,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=3
   var windspeedValue = data['wind']['speed'];
 
   nameOfCity.innerHTML = ""+nameValue;
-  desc.innerHTML = "Description - "+descValue;
-  temp.innerHTML = "Temperature - "+tempValue+"\u00B0 celsius";
-  clouds.innerHTML = "Clouds - "+cloudsValue;
-  visibility.innerHTML = "Visibility - "+visibilityValue;
-  windspeed.innerHTML = "Wind Speed - "+windspeedValue;
+  desc.innerHTML = "Description : "+descValue;
+  temp.innerHTML = "Temperature : "+tempValue+"\u00B0 C";
+  clouds.innerHTML = "Clouds : "+cloudsValue+"% of sky";
+  visibility.innerHTML = "Visibility : "+visibilityValue+"m";
+  windspeed.innerHTML = "Wind Speed : "+windspeedValue + "km/hr";
   input.value = '';
   console.log(data);
 
